@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+</head>
+
+<body style="margin: 0;">
+    <div style="display: flex;">
+        <div class="boxone" style="width: 500px; height: 500px; background-image: url(box%20one.png);margin: 20px 0 0 20px; padding:0;"></div>
+        <div class="boxtwo" style="width: 500px; height: 500px; background-image: url(box%20two.png);margin: 20px 0 0 20px; padding:0;"></div>
+        <div class="boxthree" style="width: 500px; height: 500px; background-image: url(box%20three.png);margin: 20px 0 0 20px; padding:0;"></div>
+        <script>
+            var box1 = document.querySelector('.boxone')
+            box1.onmousedown = function() {
+                box1.style.backgroundImage = 'url(boxoneremovebg.png)'
+                box1.style.backgroundColor = 'blue'
+            }
+            var box2 = document.querySelector('.boxtwo')
+            box2.onmousedown = function() {
+                box2.style.backgroundImage = 'url(boxtworemovebg.png)'
+                box2.style.backgroundColor = 'blue'
+            }
+            var box3 = document.querySelector('.boxthree')
+            box3.onmousedown = function() {
+                box3.style.backgroundImage = 'url(boxthreeremovebg.png)'
+                box3.style.backgroundColor = 'blue'
+            }
+
+        </script>
+    </div>
+
+</body>
+
+</html>
